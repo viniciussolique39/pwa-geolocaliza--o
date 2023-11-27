@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PWA Geolocation - Capturando a Localização</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="manifest" href="manifest.json" />
+<link rel="apple-touch-icon" href="/image/map.png">
+<link rel="icon" href="/image/map.png" sizes="256x256" />
+<meta name="theme-color" content="white" />
+</head>
+<body>
+<section class="container">
+<header class="cabecalho">
+<h1 class="titulo">PWA - Geolocation</h1>
+</header>
+<div class="conteudo">
+  <header class="cabecalhoConteudo">
+    <h2>Geolocalização</h2>
+  </header>
+  <div class="conteudoLocalizacao">
+    <p>
+      Latitude: <span id="latitude">0.0</span>
+    </p>
+    <p>
+      Longitude: <span id="longitude">0.0</span>
+    </p>
+    <div>
+      <button class="botao" id="localizacao">Capturar Localização</button>
+    </div>
+      <div class="mapa">
+        <div class="mapa">
+        <iframe width="1080" height="761" id="gmap_canvas" src="https://maps.google.com/maps?q=Nova%20Andradina%20-%20MS%20&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:761px;width:1080px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:761px;width:1080px;}</style>
+      </div>
+    </div>
+  
+    
+
+  </div>
+  <footer class="rodape">
+    Apliação Web Progressiva - Geolocalização
+  </footer>
+</div>
+</section>
+<script src="main.js" ></script>
+</body>
+</html>
